@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================= BODY ========================= */
+
+body {
+    min-height: 100vh;
+    background-color: #18181b;
+    color: #f4f4f5;
+    font-family: "Segoe UI", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* ========================= COUNTER APP ========================= */
+
+.counter-app {
+    width: min(90%, 500px);
+    padding: 50px 40px;
+    text-align: center;
+    background-color: #27272a;
+    border: 1px solid #3f3f46;
+    border-radius: 20px;
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+
+/* ========================= HEADING ========================= */
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #fafafa;
+}
+
+
+/* ========================= LABEL ========================= */
+
+.counter-app p {
+    margin-bottom: 20px;
+    color: #a1a1aa;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* ========================= COUNTER VALUE ========================= */
+
+.counter-value {
+    margin-bottom: 35px;
+    color: #ffffff;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    text-shadow:
+        0 0 25px rgba(255, 255, 255, 0.08);
+}
+
+
+/* ========================= BUTTON CONTAINER ========================= */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* ========================= COMMON BUTTON ========================= */
+
+button {
+    height: 50px;
+    border: 1px solid #52525b;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* ========================= INCREASE / DECREASE ========================= */
+
+#increase,
+#decrease {
+    width: 60px;
+    font-size: 28px;
+}
+
+
+/* Increase */
+
+#increase {
+    background-color: #166534;
+    color: #dcfce7;
+    box-shadow:
+        0 5px 15px rgba(22, 101, 52, 0.25);
+}
+
+
+#increase:hover {
+    background-color: #15803d;
+    transform: translateY(-3px);
+    box-shadow:
+        0 8px 20px rgba(22, 101, 52, 0.4);
+}
+
+
+/* Decrease */
+
+#decrease {
+    background-color: #9f1239;
+    color: #ffe4e6;
+    box-shadow:
+        0 5px 15px rgba(159, 18, 57, 0.25);
+}
+
+
+#decrease:hover {
+    background-color: #be123c;
+    transform: translateY(-3px);
+    box-shadow:
+        0 8px 20px rgba(159, 18, 57, 0.4);
+}
+
+
+/* ========================= RESET BUTTON ========================= */
+
+#reset {
+    width: 100px;
+    background-color: #3f3f46;
+    color: #e4e4e7;
+}
+
+
+#reset:hover {
+    background-color: #52525b;
+    transform: translateY(-3px);
+}
+
+
+/* ========================= BUTTON ACTIVE ========================= */
+
+button:active {
+    transform: translateY(1px) scale(0.97);
+}
+
+
+/* ========================= MOBILE ========================= */
+
+@media (max-width: 500px) {
+
+    .counter-app {
+        width: 95%;
+        padding: 40px 25px;
+    }
+
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+
+    .counter-value {
+        font-size: 4rem;
+    }
+
+
+    #increase,
+    #decrease {
+        width: 55px;
+    }
+
+
+    #reset {
+        width: 90px;
+    }
+}
