@@ -1,0 +1,306 @@
+/* ================================
+   Global
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #090909;
+  color: #ffffff;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+
+/* ================================
+   Main Container
+================================ */
+
+.app-container {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+}
+
+
+/* ================================
+   Main Heading
+================================ */
+
+.app-container > h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+
+  margin-bottom: 35px;
+
+  color: #ffffff;
+  letter-spacing: -1px;
+}
+
+.app-container > h1 span {
+  color: #f97316;
+}
+
+
+/* ================================
+   Main Card
+================================ */
+
+.auth-card {
+  width: 100%;
+  max-width: 850px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background: #111111;
+
+  border: 1px solid #2a2a2a;
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ================================
+   Login Section
+================================ */
+
+.login-section {
+  padding: 45px;
+
+  border-right: 1px solid #2a2a2a;
+}
+
+.login-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 28px;
+
+  color: #ffffff;
+}
+
+
+/* ================================
+   Inputs
+================================ */
+
+.login-section input {
+  display: block;
+
+  width: 100%;
+
+  padding: 14px 16px;
+  margin-bottom: 16px;
+
+  background: #191919;
+
+  border: 1px solid #333333;
+  border-radius: 9px;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: all 0.25s ease;
+}
+
+.login-section input::placeholder {
+  color: #777777;
+}
+
+.login-section input:focus {
+  border-color: #f97316;
+
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+}
+
+
+/* ================================
+   Button
+================================ */
+
+.login-section button {
+  width: 100%;
+
+  padding: 14px;
+
+  margin-top: 8px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #f97316;
+  color: #000000;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.login-section button:hover {
+  background: #fb923c;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 8px 25px rgba(249, 115, 22, 0.2);
+}
+
+.login-section button:active {
+  transform: translateY(0);
+}
+
+
+/* ================================
+   Profile Section
+================================ */
+
+.profile-section {
+  padding: 45px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  background: #0d0d0d;
+}
+
+
+/* ================================
+   Profile Icon
+================================ */
+
+.profile-icon {
+  width: 75px;
+  height: 75px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  border-radius: 50%;
+
+  background: #1a1a1a;
+
+  border: 2px solid #f97316;
+
+  color: #f97316;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  box-shadow: 0 0 30px rgba(249, 115, 22, 0.1);
+}
+
+
+/* ================================
+   Profile Heading
+================================ */
+
+.profile-section h2 {
+  font-size: 1.7rem;
+
+  margin-bottom: 8px;
+
+  color: #ffffff;
+}
+
+
+/* ================================
+   Login Message
+================================ */
+
+.login-message {
+  max-width: 250px;
+
+  color: #777777;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* ================================
+   Welcome
+================================ */
+
+.welcome-message {
+  color: #f97316;
+
+  font-size: 1.5rem;
+
+  font-weight: 700;
+}
+
+
+/* ================================
+   Profile Status
+================================ */
+
+.profile-status {
+  margin-top: 10px;
+
+  color: #777777;
+
+  font-size: 14px;
+}
+
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 700px) {
+
+  .app-container {
+    padding: 20px;
+  }
+
+  .app-container > h1 {
+    font-size: 2rem;
+
+    margin-bottom: 25px;
+  }
+
+  .auth-card {
+    grid-template-columns: 1fr;
+  }
+
+  .login-section {
+    border-right: none;
+
+    border-bottom: 1px solid #2a2a2a;
+
+    padding: 30px;
+  }
+
+  .profile-section {
+    padding: 35px 30px;
+  }
+}
